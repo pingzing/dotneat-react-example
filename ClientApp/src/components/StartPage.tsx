@@ -13,7 +13,8 @@ interface AppState {
 
 class App extends React.Component<AppProp, AppState> {
     constructor(props: AppProp) {
-        super(props);        
+        super(props);
+        this.state = ({ text: "Ping has not been called yet." });
     }
 
     async handlePing(e: React.MouseEvent, networkService: NetworkService) {
@@ -30,7 +31,7 @@ class App extends React.Component<AppProp, AppState> {
                     <div>                                                    
                         <input className="ping-box" disabled value={this.state.text}></input>
                         <br />                            
-                        <button onClick={e => this.handlePing(e, context.networkService)}>Click me to ping!</button>                                                    
+                        <button onClick={e => this.handlePing(e, context.networkService)}>Click to ping</button>                                                    
                     </div>
                 )}
             </ServiceContainerContextConsumer>
