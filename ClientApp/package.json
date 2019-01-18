@@ -1,0 +1,52 @@
+{
+  "name": "dotneat-react-example",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npx jest",
+    "start": "webpack-dev-server --config webpack.dev.js --hot",
+    "build": "webpack --colors --config webpack.dev.js",
+    "buildProduction": "webpack --colors --optimize-minimize --define process.env.NODE_ENV='production' --config webpack.prod.js"
+  },
+  "author": "Finavia",
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.10",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/webpack-env": "^1.13.6",
+    "aspnet-webpack": "^3.0.0",
+    "aspnet-webpack-react": "^4.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^2.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eventsource-polyfill": "^0.9.6",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "jest": "^23.6.0",
+    "node-sass": "^4.11.0",
+    "react-hot-loader": "^4.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "svg-inline-loader": "^0.8.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-middleware": "^3.5.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "core-js": "^2.6.2",
+    "promise-polyfill": "8.1.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

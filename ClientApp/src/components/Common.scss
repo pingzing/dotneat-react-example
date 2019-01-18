@@ -1,0 +1,63 @@
+$bright-blue: #0074f2;
+$dark-border-color: #0c2645;
+$light-text-color: #5b7187;
+
+:focus {
+    box-shadow: 0 0 0 2px rgba(24, 127, 206, 0.8);
+}
+
+// Hide Firefox's dotted-block outline surrounding button text.
+button::-moz-focus-inner {
+    border: 0;
+}
+
+input {    
+    border: 3px solid;
+    border-color: #c2c9d0;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 12px;
+    color: $light-text-color;
+}
+
+input::placeholder {    
+    font-size: 14px;
+    line-height: 12px;
+    color: $light-text-color;
+}
+
+input:focus {
+    box-shadow: none;
+    border-color: $dark-border-color;
+    color: $dark-border-color;
+}
+
+input:disabled {
+    color: #e6e9ec;
+    border-color: #e6e9ec;
+    color: #667b8f;
+}
+
+button {
+    transition: all .2s ease-in-out;
+    background: transparent;
+    border: 2px solid;
+    border-color: $bright-blue;
+    padding: 21px 27px;
+    width: 283px;
+
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+    color: $bright-blue;
+    text-transform: uppercase;    
+}
+
+button:hover {    
+    background: $bright-blue;
+    color:white;
+}
+
+.shadow {
+    box-shadow: 0 14px 64px 0 rgba(12, 38, 69, 0.15);
+}
