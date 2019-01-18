@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import "./StartPage.scss";
 import "./Common.scss";
 import { NetworkService } from "../services/NetworkService";

@@ -4,7 +4,6 @@
   "main": "index.ts",
   "scripts": {
     "test": "npx jest",
-    "start": "webpack-dev-server --config webpack.dev.js --hot",
     "build": "webpack --colors --config webpack.dev.js",
     "buildProduction": "webpack --colors --optimize-minimize --define process.env.NODE_ENV='production' --config webpack.prod.js"
   },
